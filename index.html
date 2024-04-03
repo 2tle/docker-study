@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            .container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div.title {
+                font-size: 24px;
+                animation: fontAnimation 3s infinite;
+                border: 1px solid lightcoral;
+                padding: 2em 5em 2em 5em;
+            }
+
+            @keyframes fontAnimation {
+                0%, 100% {
+                    font-size: 20px;
+                }
+                50% {
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title" onclick="goGithub()">Hello, SKKU?</div>
+        </div>
+        <script>
+            function goGithub() {
+                window.open("https://github.com/2tle", "_blank");
+            }
+        </script>
+    </body>
+</html>
